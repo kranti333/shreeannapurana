@@ -66,21 +66,23 @@
 
         </div>
 
+        <button class="menu-btn" aria-label="Toggle menu"><i class="fa fa-bars"></i></button>
+
         <nav>
 
-            <ul>
+            <ul class="nav-links">
 
-                <li><a href="menu1.html" class="active">Home</a></li>
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
 
-                <li><a href="#menu">Menu</a></li>
+                <li><a href="index.html#menu"><i class="fa-solid fa-list"></i><span>Menu</span></a></li>
 
-                <li><a href="#special">Specials</a></li>
+                <li><a href="index.html#special"><i class="fa-solid fa-star"></i><span>Specials</span></a></li>
 
-                <li><a href="#about">About</a></li>
+                <li><a href="index.html#about"><i class="fa-solid fa-circle-info"></i><span>About</span></a></li>
 
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="index.html#gallery"><i class="fa-solid fa-image"></i><span>Gallery</span></a></li>
 
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#contact"><i class="fa-solid fa-phone"></i><span>Contact</span></a></li>
 
             </ul>
 
@@ -99,79 +101,49 @@
     
 
     <!-- ==========================
-            MENU
+            PRODUCTS
     =========================== -->
 
-    <section id="menu" class="menu-section">
+    <section class="products-section">
 
-        <div class="section-heading">
+        <div class="heading">
 
-            <h2>Cold Coffee</h2>
+            <h3>Our Specialties</h3>
 
-            <p>
+            <h1>Cold Coffee</h1>
 
-                Fresh • Chilled • Delicious
-
-            </p>
+            <p>Signature blends brewed to perfection and chilled cold</p>
 
         </div>
 
-         <div class="menu-grid">
-
-            <!-- Cold Coffee with Icecream-->
+        <div class="container">
 
             <div class="card">
 
                 <div class="card-image">
 
-                    <img src="images/ccicecream.jpeg" alt="Cold Drinks">
+                    <img src="images/coffee.jpeg" alt="Cold Coffee">
 
                 </div>
 
                 <div class="card-content">
 
-                    <h3>Cold Coffee with Icecream</h3>
+                    <h3>Classic Cold Coffee</h3>
 
-
-                    <div class="price-row">
-
-                        <span>₹70</span>
-
-                        <button>
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </button>
-
+                    <div class="rating">
+                        ★★★★★
                     </div>
 
-                </div>
-
-            </div>
-
-            <!-- coffee-->
-
-            <div class="card">
-
-                <div class="card-image">
-
-                    <img src="images/coffee.jpeg" alt="Juices">
-
-                </div>
-
-                <div class="card-content">
-
-                    <h3>coffee</h3>
-					
+                    <p>
+                        Rich roasted espresso blended with creamy milk and ice.
+                    </p>
 
                     <div class="price-row">
 
-                        <span>₹60</span>
+                        <span class="price">₹60</span>
 
-                        <button>
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
+                        <button class="buy-btn">
+                            Add to Cart
                         </button>
 
                     </div>
@@ -185,157 +157,7 @@
 
     </section>
 
-
-    
-
-</body>
-
-</html><!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Fresh Juices | Annapurna Cold Drink Shop</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-<style>
-
-body{
-background:#08141f;
-font-family:Poppins,sans-serif;
-color:#fff;
-}
-
-.sub-header{
-    position: relative;
-    width:100%;
-padding:40px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(15px);
-
-}
-
-.back-btn{
-padding:12px 25px;
-background:#ff9800;
-color:#fff;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
-}
-
-.sub-title{
-text-align:center;
-padding:60px 20px 30px;
-}
-
-.sub-title h1{
-font-size:50px;
-color:#ffb347;
-}
-
-.products{
-width:90%;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-padding-bottom:80px;
-}
-
-.product{
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(15px);
-border-radius:25px;
-padding:25px;
-text-align:center;
-transition:.4s;
-}
-
-.product:hover{
-transform:translateY(-10px);
-}
-
-.product img{
-width:180px;
-height:220px;
-object-fit:contain;
-margin:auto;
-}
-
-.product h2{
-margin-top:15px;
-}
-
-.size{
-color:#ffb347;
-font-weight:600;
-margin:10px 0;
-}
-
-.price{
-font-size:28px;
-color:#ff9800;
-font-weight:bold;
-margin:15px 0;
-}
-
-.buy{
-background:#ff9800;
-padding:12px 30px;
-border:none;
-border-radius:30px;
-color:white;
-cursor:pointer;
-font-size:16px;
-transition:.3s;
-}
-
-.buy:hover{
-background:#ffb347;
-}
-
-</style>
-
-</head>
-
-<body>
-
-
-
-<script>
-
-const buttons=document.querySelectorAll(".buy");
-
-buttons.forEach(btn=>{
-
-btn.onclick=()=>{
-
-alert("Juice Added to Cart Successfully!");
-
-}
-
-});
-
-</script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
